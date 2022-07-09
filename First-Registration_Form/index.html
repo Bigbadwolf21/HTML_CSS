@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+   </head>
+   <body>
+    <h1>Registration Form</h1>
+    <form>
+        <label for="username">Enter username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required>
+        <br><br>
+        <label for="email">Enter email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email address" required>
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+        <p>Select your age:</p>
+        <input type="radio" id="age" name="option-1" value="0-15">
+        <label for="option-1">0 - 15</label>
+        <input type="radio" id="age" name="option-2" value="16-30">
+        <label for="option-2">16 - 30</label>
+        <input type="radio" id="age" name="option-3" value="31-45">
+        <label for="option-3">31 - 45</label>
+        <input type="radio" id="age" name="option-4" value="46-60">
+        <label for="option-4">46 - 60</label>
+        <input type="radio" id="age" name="option-5" value="60+">
+        <label for="option-5">60+</label>
+        <br><br>
+
+        <label for="question">Security question</label>
+        <select name="question" id="question">
+            <option value="q1">What is your favourite colour?</option>
+            <option value="q2">What is your favourite?</option>
+            <option value="q3">What is your favourite car brand?</option>
+        </select>
+
+        <br><br>
+
+        <label for="answer">Security question answer</label>
+        <input type="text" id="answer" name="answer">
+
+        <br><br>
+        <label for="bio">Your bio:</label><br>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you...">
+        </textarea>
+        <br><br>
+        <input type="submit" value="submit the form">        
+    </form>
+   </body> 
+</html>
